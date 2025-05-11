@@ -5,7 +5,7 @@ LABEL maintainer="M Rohit Singha gusionfusion009@gmail.com"
 RUN yum install -y httpd zip unzip
 
 # Copy the local ZIP file into the container's /var/www/html directory
-COPY "Photogenic Free Website Template - Free-CSS.com.zip" /var/www/html/
+COPY Photogenic\ Free\ Website\ Template\ -\ Free-CSS.com.zip /var/www/html/
 
 # Change working directory
 WORKDIR /var/www/html/
