@@ -11,10 +11,10 @@ COPY photogenic.zip /var/www/html/
 WORKDIR /var/www/html/
 
 # Unzip the template into the directory
-RUN unzip "Photogenic Free Website Template - Free-CSS.com.zip"
+RUN unzip "photogenic.zip"
 
 # Clean up unnecessary files
-RUN rm -rf "Photogenic Free Website Template - Free-CSS.com.zip"
+RUN rm -rf "photogenic.zip"
 
 # Set the CMD to run Apache in the foreground
 CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
