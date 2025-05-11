@@ -1,4 +1,4 @@
-FROM centos:latest
+FROM centos:7
 LABEL maintainer="M Rohit Singha gusionfusion009@gmail.com"
 RUN yum install -y httpd \
     zip \
