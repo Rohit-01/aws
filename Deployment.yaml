@@ -12,10 +12,9 @@ spec:
       labels:
         app: mrdevops
     spec:
-      container:
+      containers:
       - name: mrdevops
         image: rohitsingha07/pipeline-demo 
         imagePullPolicy: Always
         ports:
         - containerPort: 80
-        
